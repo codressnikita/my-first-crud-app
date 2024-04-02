@@ -1,7 +1,9 @@
 FROM node:21-alpine
 
+RUN mkdir /app
+
 COPY package.json /app/
-COPY src /app/
+COPY . /app/
 
 WORKDIR /app
 
